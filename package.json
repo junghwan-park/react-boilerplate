@@ -2,7 +2,9 @@
   "name": "react-boilerplate",
   "version": "0.0.1",
   "main": "index.js",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --open --mode development",
