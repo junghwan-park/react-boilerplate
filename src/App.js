@@ -1,8 +1,3 @@
-/**
- * @fileoverview Application main entry file.
- * @author NHN Ent. FE Development Lab <dl_javascript@nhnent.com>
- */
-
 import React from 'react';
 import {Provider} from 'react-redux';
 

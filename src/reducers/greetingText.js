@@ -1,8 +1,3 @@
-/**
- * @fileoverview 'state.greetingText' reducer.
- * @author NHN Ent. FE Development Lab <dl_javascript@nhnent.com>
- */
-
 import {SET_GREETING_TEXT} from '../actions/greetingText';
 
 /**

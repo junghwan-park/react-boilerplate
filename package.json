@@ -1,17 +1,14 @@
 {
   "name": "react-boilerplate",
   "version": "0.0.1",
-  "description": "Simple React.js + Redux boilerplate",
   "main": "index.js",
-  "files": [
-    "dist/"
-  ],
+  "files": ["dist/"],
   "scripts": {
-    "build-dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --open --mode development"
+    "dev": "webpack-dev-server --open --mode development",
+    "lint": "eslint src"
   },
-  "author": "Junghwan-Park",
+  "author": "NHN Ent. FE Development Lab <dl_javascript@nhnent.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.1.5",

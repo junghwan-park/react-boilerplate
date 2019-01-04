@@ -1,8 +1,3 @@
-/**
- * @fileoverview Result message input area component.
- * @author NHN Ent. FE Development Lab <dl_javascript@nhnent.com>
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 

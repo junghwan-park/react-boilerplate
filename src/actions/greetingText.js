@@ -1,9 +1,4 @@
 /**
- * @fileoverview Greeting text reducer
- * @author NHN Ent. FE Development Lab <dl_javascript@nhnent.com>
- */
-
-/**
  * Set greeting text action type
  * @type {string}
  */

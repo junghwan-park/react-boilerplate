@@ -1,8 +1,3 @@
-/**
- * @fileoverview User name and greeting message input area component.
- * @author NHN Ent. FE Development Lab <dl_javascript@nhnent.com>
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
@@ -23,7 +18,7 @@ class InputArea extends React.PureComponent {
   componentDidMount() {
     const {greetingText} = this.props;
 
-    this.setState({greetingText: greetingText});
+    this.setState({greetingText});
   }
 
   onChangeInput(ev, stateKey) {
@@ -61,7 +56,7 @@ class InputArea extends React.PureComponent {
         />
         <br />
         <button type="button" className="button" onClick={this.onClickApplyButton.bind(this)}>
-          적용
+          Apply
         </button>
       </div>
     );

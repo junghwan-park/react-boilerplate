@@ -14,24 +14,13 @@ module.exports = {
     node: true,
     es6: true
   },
-  extends: ['tui', 'plugin:react/recommended', 'plugin:prettier/recommended'],
+  extends: ['tui/es6', 'plugin:react/recommended', 'plugin:prettier/recommended'],
   plugins: ['react', 'prettier'],
-  rules: {
-    indent: [
-      2,
-      2,
-      {
-        SwitchCase: 1,
-        ignoreComments: false,
-        ImportDeclaration: 1,
-        flatTernaryExpressions: false
-      }
-    ]
-  },
+  rules: {},
   settings: {
     react: {
       pragma: 'React',
-      version: '16.3'
+      version: '16.6'
     }
   }
 };

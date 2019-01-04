@@ -1,7 +1,3 @@
-/**
- * @fileoverview Reducer index file.
- * @author NHN Ent. FE Development Lab <dl_javascript@nhnent.com>
- */
 import {combineReducers} from 'redux';
 
 import {greetingText} from './greetingText';

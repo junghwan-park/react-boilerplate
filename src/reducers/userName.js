@@ -1,8 +1,3 @@
-/**
- * @fileoverview 'state.userName' reducer.
- * @author NHN Ent. FE Development Lab <dl_javascript@nhnent.com>
- */
-
 import {SET_USER_NAME} from '../actions/userName';
 
 /**

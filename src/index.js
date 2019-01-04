@@ -1,7 +1,3 @@
-/**
- * Index entry for bootstrapping source and assets.
- */
-
 import {render} from 'react-dom';
 
 import '../assets/css/common.css';

@@ -5,18 +5,12 @@
       {
         "modules": "false",
         "targets": {
-          "browsers": [
-            "last 2 versions",
-            "not ie <= 8"
-          ]
+          "browsers": ["last 2 versions", "not ie <= 8"]
         }
       }
     ],
     "@babel/preset-react"
   ],
-  "plugins": [
-    "@babel/plugin-proposal-object-rest-spread",
-    "@babel/plugin-proposal-class-properties"
-  ]
+  "plugins": ["@babel/plugin-proposal-object-rest-spread", "@babel/plugin-proposal-class-properties"]
 }
 

@@ -1,9 +1,4 @@
 /**
- * @fileoverview User name reducer.
- * @author NHN Ent. FE Development Lab <dl_javascript@nhnent.com>
- */
-
-/**
  * Set userName action type.
  * @type {string}
  */

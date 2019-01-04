@@ -1,8 +1,3 @@
-/**
- * @fileoverview Redux store creation & initialization.
- * @export store
- */
-
 import {createStore} from 'redux';
 
 import reducers from './reducers';
