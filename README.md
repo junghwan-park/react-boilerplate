@@ -6,7 +6,9 @@
 * [webpack](https://webpack.js.org/)
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 * [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
+* [mini-css-extract-plugin](https://www.npmjs.com/package/mini-css-extract-plugin)
 * [optimize-css-assets-webpack-plugin](https://www.npmjs.com/package/optimize-css-assets-webpack-plugin)
+* [terser-webpack-plugin](https://www.npmjs.com/package/terser-webpack-plugin)
 
 #### React
 * [prop-types](https://github.com/facebook/prop-types)
