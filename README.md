@@ -46,7 +46,7 @@
 
 1. Gets the git project.
 ```
-  git clone https://github.com/junghwan-park/react-boilerplate.git
+  git clone https://github.nhnent.com/fe/react-boilerplate.git
 ```
 2. Run the installation from the internal repo directory.
 ```
