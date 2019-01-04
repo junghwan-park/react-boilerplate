@@ -17,7 +17,6 @@
 
 #### Babel
 * [babel](https://babeljs.io/)
-* [@babel/polyfill](https://babeljs.io/docs/en/babel-polyfill)
 * [@babel/preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env)
 * [@babel/preset-react](https://github.com/babel/babel/tree/master/packages/babel-preset-react)
 * [@babel/plugin-proposal-class-properties](https://github.com/babel/babel/tree/master/packages/babel-plugin-proposal-class-properties)
