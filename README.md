@@ -62,4 +62,3 @@
 * `npm run dev` - Start webpack-dev-server.
 * `npm run lint` - Run ESLint.
 * `npm run build` - Bundle and minify resources into `/dist` directory.
-* `npm run build-dev` - Bundle resources into `/dist` directory.
