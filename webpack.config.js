@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -13,7 +13,6 @@ module.exports = (env, options = {}) => {
     },
     output: {
       filename: '[name].bundle.js',
-      libraryTarget: 'umd',
       path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -48,24 +47,20 @@ module.exports = (env, options = {}) => {
     },
     optimization: {
       splitChunks: {
-        cacheGroups: {
-          commons: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            chunks: 'all'
-          }
-        }
+        name: 'vendors',
+        chunks: 'all'
       }
-    }
+    },
+    plugins: [new MiniCssExtractPlugin()]
   };
 
   if (options.mode === 'development') {
-    config.plugins = [
-      new webpack.HotModuleReplacementPlugin(),
+    config.plugins.push(new webpack.HotModuleReplacementPlugin());
+    config.plugins.push(
       new HtmlWebpackPlugin({
         template: 'example/index.html'
       })
-    ];
+    );
 
     config.devtool = 'inline-source-map';
     config.devServer = {
@@ -77,21 +72,21 @@ module.exports = (env, options = {}) => {
       }
     };
   } else {
-    config.optimization = {
-      minimizer: [
-        new UglifyJsPlugin({
-          cache: true,
-          parallel: true,
-          sourceMap: false
-        }),
-        new OptimizeCSSAssetsPlugin()
-      ]
-    };
+    Object.assign(config.output, {
+      filename: '[name].[contenthash].js',
+      libraryTarget: 'umd'
+    });
+    config.optimization.minimizer = [
+      new TerserPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: false
+      }),
+      new OptimizeCSSAssetsPlugin()
+    ];
 
     config.plugins = [new CleanWebpackPlugin(['dist'])];
   }
-
-  config.plugins.push(new MiniCssExtractPlugin());
 
   return config;
 };
